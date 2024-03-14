@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ruleset
+  xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  name="Custom Apex Rules"
+  xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd"
+>
+   <description>Custom Ruleset to use with Apex PMD</description>
+
+   <include-pattern>.*/aura/.*</include-pattern>
+   <include-pattern>.*/classes/.*</include-pattern>
+   <include-pattern>.*/flexipages/.*</include-pattern>
+   <include-pattern>.*/flows/.*</include-pattern>
+   <include-pattern>.*/layouts/.*</include-pattern>
+   <include-pattern>.*/lwc/.*</include-pattern>
+   <include-pattern>.*/objects/.*</include-pattern>
+   <include-pattern>.*/workflows/.*</include-pattern>
+
+  <rule name="Aura" language="xml" message="Custom Metadata" class="net.sourceforge.pmd.lang.rule.XPathRule">
+    <priority>1</priority>
+    <properties>
+      <property name="version" value="2.0"/>
+      <property name="xpath"><value><![CDATA[
+        //AuraDefinitionBundle[count(//AuraDefinitionBundle) = 1]
+      ]]></value></property>
+    </properties>
+  </rule>
+
+  <rule name="ApexClass" language="xml" message="Custom Metadata" class="net.sourceforge.pmd.lang.rule.XPathRule">
+    <priority>1</priority>
+    <properties>
+      <property name="version" value="2.0"/>
+      <property name="xpath"><value><![CDATA[
+        //ApexClass[count(//ApexClass) = 1]
+      ]]></value></property>
+    </properties>
+  </rule>
+
+  <rule name="LighningPage" language="xml" message="Standard Metadata" class="net.sourceforge.pmd.lang.rule.XPathRule">
+    <priority>5</priority>
+    <properties>
+      <property name="version" value="2.0"/>
+      <property name="xpath"><value><![CDATA[
+        //FlexiPage[count(//FlexiPage) = 1]
+      ]]></value></property>
+    </properties>
+  </rule>
+
+  <rule name="Flow" language="xml" message="Standard Metadata" class="net.sourceforge.pmd.lang.rule.XPathRule">
+    <priority>5</priority>
+    <properties>
+      <property name="version" value="2.0"/>
+      <property name="xpath"><value><![CDATA[
+        //Flow[count(//Flow) = 1]
+      ]]></value></property>
+    </properties>
+  </rule>
+
+  <rule name="Layout" language="xml" message="Standard Metadata" class="net.sourceforge.pmd.lang.rule.XPathRule">
+    <priority>5</priority>
+    <properties>
+      <property name="version" value="2.0"/>
+      <property name="xpath"><value><![CDATA[
+        //Layout[count(//Layout) = 1]
+      ]]></value></property>
+    </properties>
+  </rule>
+
+  <rule name="LightningWebComponant" language="xml" message="Custom Metadata" class="net.sourceforge.pmd.lang.rule.XPathRule">
+    <priority>1</priority>
+    <properties>
+      <property name="version" value="2.0"/>
+      <property name="xpath"><value><![CDATA[
+        //LightningComponentBundle[count(//LightningComponentBundle) = 1]
+      ]]></value></property>
+    </properties>
+  </rule>
+
+  <rule name="Object" language="xml" message="Standard Metadata" class="net.sourceforge.pmd.lang.rule.XPathRule">
+    <priority>5</priority>
+    <properties>
+      <property name="version" value="2.0"/>
+      <property name="xpath"><value><![CDATA[
+        //CustomObject[count(//CustomObject) = 1]
+      ]]></value></property>
+    </properties>
+  </rule>
+
+  <rule name="Workflow" language="xml" message="Standard Metadata" class="net.sourceforge.pmd.lang.rule.XPathRule">
+    <priority>5</priority>
+    <properties>
+      <property name="version" value="2.0"/>
+      <property name="xpath"><value><![CDATA[
+        //Workflow[count(//Workflow) = 1]
+      ]]></value></property>
+    </properties>
+  </rule>
+</ruleset>
