@@ -37,7 +37,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>StandardScore__c</field>
+                <field>ComplianceScore__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -84,11 +84,10 @@
     <relatedLists>
         <fields>NAME</fields>
         <fields>Problem__c</fields>
-        <fields>ReportDate__c</fields>
+        <fields>Description__c</fields>
         <fields>Priority__c</fields>
         <fields>MetadataFile__c</fields>
         <fields>Line__c</fields>
-        <fields>Description__c</fields>
         <relatedList>RuleResult__c.RuleSetResult__c</relatedList>
         <sortField>Problem__c</sortField>
         <sortOrder>Asc</sortOrder>

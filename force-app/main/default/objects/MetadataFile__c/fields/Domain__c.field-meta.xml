@@ -11,8 +11,13 @@
             <sorted>true</sorted>
             <value>
                 <fullName>Common</fullName>
-                <default>true</default>
+                <default>false</default>
                 <label>Common</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>true</default>
+                <label>None</label>
             </value>
         </valueSetDefinition>
     </valueSet>

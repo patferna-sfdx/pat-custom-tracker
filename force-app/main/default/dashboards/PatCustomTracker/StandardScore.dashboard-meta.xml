@@ -113,7 +113,7 @@
                 <chartSummary>
                     <aggregate>Average</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>RuleSetResult__c.StandardScore__c</column>
+                    <column>RuleSetResult__c.ComplianceScore__c</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
                 <dashboardFilterColumns>
@@ -138,7 +138,7 @@
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
-                        <sortColumn>a!RuleSetResult__c.StandardScore__c</sortColumn>
+                        <sortColumn>a!RuleSetResult__c.ComplianceScore__c</sortColumn>
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>

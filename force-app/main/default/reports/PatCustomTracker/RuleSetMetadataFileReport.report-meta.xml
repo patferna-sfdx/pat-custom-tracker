@@ -6,15 +6,21 @@
         <backgroundFadeDir>Diagonal</backgroundFadeDir>
         <chartSummaries>
             <aggregate>Average</aggregate>
-            <axisBinding>y</axisBinding>
-            <column>RuleSetResult__c.PriorityScore__c</column>
+            <axisBinding>x</axisBinding>
+            <column>RuleSetResult__c.ComplianceScore__c</column>
         </chartSummaries>
-        <chartType>Line</chartType>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>ScatterGrouped</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>RuleSetResult__c.ReportDate__c</groupingColumn>
+        <groupingColumn>RuleSetResult__c.Type__c</groupingColumn>
+        <legendPosition>Bottom</legendPosition>
         <location>CHART_BOTTOM</location>
-        <showAxisLabels>true</showAxisLabels>
+        <secondaryGroupingColumn>FK_$MetadataFile__c.Type__c</secondaryGroupingColumn>
+        <showAxisLabels>false</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
         <showValues>false</showValues>
@@ -27,17 +33,13 @@
     </chart>
     <columns>
         <aggregateTypes>Average</aggregateTypes>
-        <field>RuleSetResult__c.PriorityScore__c</field>
+        <field>RuleSetResult__c.ComplianceScore__c</field>
     </columns>
     <columns>
-        <field>RuleSetResult__c.Type__c</field>
+        <field>CUST_NAME</field>
     </columns>
     <columns>
         <field>FK_NAME</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Average</aggregateTypes>
-        <field>RuleSetResult__c.ComplianceScore__c</field>
     </columns>
     <currency>EUR</currency>
     <filter>
@@ -50,27 +52,32 @@
         </criteriaItems>
         <language>en_US</language>
     </filter>
-    <format>Summary</format>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_$MetadataFile__c.Domain__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_$MetadataFile__c.Type__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
     <groupingsDown>
         <field>RuleSetResult__c.ReportDate__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>FK_$MetadataFile__c.Domain__c</field>
+        <field>RuleSetResult__c.Type__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>FK_$MetadataFile__c.Type__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <name>Metadata Results</name>
+    <name>RuleSet MetadataFile Report</name>
     <params>
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>CustomEntityCustomEntity$RuleSetResult__c$RuleResult__c@RuleResult__c.MetadataFile__c</reportType>
+    <reportType>CustomEntity$RuleSetResult__c@RuleSetResult__c.MetadataFile__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>

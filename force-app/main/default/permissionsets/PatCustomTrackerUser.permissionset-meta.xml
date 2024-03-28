@@ -52,6 +52,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>RuleSetResult__c.ComplianceScore__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>RuleSetResult__c.MetadataFile__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -68,11 +73,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>RuleSetResult__c.ReportDate__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>RuleSetResult__c.StandardScore__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

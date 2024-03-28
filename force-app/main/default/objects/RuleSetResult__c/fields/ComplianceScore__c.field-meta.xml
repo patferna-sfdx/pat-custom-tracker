@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>StandardScore__c</fullName>
+    <fullName>ComplianceScore__c</fullName>
     <externalId>false</externalId>
-    <formula>(PriorityMin__c-1)/4</formula>
-    <label>Standard Score</label>
+    <formula>(PriorityMin__c-1)/5</formula>
+    <label>Compliance Score</label>
     <precision>18</precision>
     <required>false</required>
     <scale>0</scale>

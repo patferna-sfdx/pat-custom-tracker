@@ -23,6 +23,10 @@
                 <behavior>Edit</behavior>
                 <field>ExternalId__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>IsActive__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -67,10 +71,9 @@
     </layoutSections>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>ComplianceScore__c</fields>
         <fields>ReportDate__c</fields>
         <fields>Type__c</fields>
-        <fields>PriorityMin__c</fields>
-        <fields>PriorityScore__c</fields>
         <relatedList>RuleSetResult__c.MetadataFile__c</relatedList>
         <sortField>ReportDate__c</sortField>
         <sortOrder>Desc</sortOrder>
@@ -79,10 +82,9 @@
         <fields>NAME</fields>
         <fields>Problem__c</fields>
         <fields>ReportDate__c</fields>
-        <fields>RuleSetResult__c</fields>
-        <fields>Priority__c</fields>
         <fields>Description__c</fields>
-        <fields>Line__c</fields>
+        <fields>Priority__c</fields>
+        <fields>RuleSetResult__c</fields>
         <relatedList>RuleResult__c.MetadataFile__c</relatedList>
         <sortField>ReportDate__c</sortField>
         <sortOrder>Desc</sortOrder>

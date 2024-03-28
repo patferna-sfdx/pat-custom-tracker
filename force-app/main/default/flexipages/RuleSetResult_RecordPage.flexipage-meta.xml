@@ -95,10 +95,10 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>required</value>
+                    <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.ExternalId__c</fieldItem>
-                <identifier>RecordExternalId_cField</identifier>
+                <fieldItem>Record.ComplianceScore__c</fieldItem>
+                <identifier>RecordComplianceScore_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-ccee8dcb-278c-4a1d-8961-d44d03be71a9</name>

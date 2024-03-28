@@ -1,9 +1,10 @@
 #!/bin/sh
-sqlite3 transform/vlocity-mig.db <<EOF
+sqlite3 transform/pat-custom-tracker.db <<EOF
 .read transform/CREATE_TABLES.sql
 
 .mode csv
 .import --skip 1 transform/in/PmdReport.csv PmdReport
+.import --skip 1 transform/in/CpdReport.csv CpdReport
 
 .mode column
 .read transform/TRANSFORM.sql

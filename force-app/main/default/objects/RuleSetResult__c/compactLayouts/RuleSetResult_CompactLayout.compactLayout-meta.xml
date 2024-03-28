@@ -5,7 +5,7 @@
     <fields>ReportDate__c</fields>
     <fields>MetadataFile__c</fields>
     <fields>Type__c</fields>
-    <fields>PriorityMin__c</fields>
     <fields>PriorityScore__c</fields>
+    <fields>ComplianceScore__c</fields>
     <label>RuleSet Result Compact Layout</label>
 </CompactLayout>
