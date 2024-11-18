@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>PatCustomTrackerApp</members>
+		<name>CustomApplication</name>
+	</types>
+	<types>
+		<members>PatCustomTracker</members>
+		<members>PatCustomTracker/ComplianceScore</members>
+		<members>PatCustomTracker/PriorityScore</members>
+		<members>PatCustomTracker/StandardScore</members>
+		<name>Dashboard</name>
+	</types>
+	<types>
+		<members>MetadataFile_RecordPage</members>
+		<members>PatCustomTracker_HomePage</members>
+		<members>PatCustomTracker_UtilityBar</members>
+		<members>RuleResult_RecordPage</members>
+		<members>RuleSetHistory_RecordPage</members>
+		<members>RuleSetResult_RecordPage</members>
+		<name>Flexipage</name>
+	</types>
+	<types>
+		<members>MetadataFile__c-MetadataFile Layout</members>
+		<members>RuleResult__c-RuleResult Layout</members>
+		<members>RuleSetHistory__c-RuleSetHistory Layout</members>
+		<members>RuleSetResult__c-RuleSetResult Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>MetadataFile__c</members>
+		<members>RuleResult__c</members>
+		<members>RuleSetHistory__c</members>
+		<members>RuleSetResult__c</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>PatCustomTrackerAdmin</members>
+		<members>PatCustomTrackerUser</members>
+		<name>PermissionSet</name>
+	</types>
+	<types>
+		<members>PatCustomTracker</members>
+		<members>PatCustomTracker/MetadataFileComplianceReport</members>
+		<members>PatCustomTracker/MetadataFileTypeRuleReport</members>
+		<members>PatCustomTracker/MetadataFilesReport</members>
+		<members>PatCustomTracker/MetadataResults</members>
+		<members>PatCustomTracker/RuleSetHistoryReport</members>
+		<members>PatCustomTracker/RuleSetMetadataFileReport</members>
+		<name>Report</name>
+	</types>
+	<types>
+		<members>MetadataFile__c</members>
+		<members>RuleResult__c</members>
+		<members>RuleSetHistory__c</members>
+		<members>RuleSetResult__c</members>
+		<name>CustomTab</name>
+	</types>
+	<version>61.0</version>
+</Package>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Domain__c</fullName>
-    <externalId>false</externalId>
     <label>Domain</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
@@ -15,9 +14,19 @@
                 <label>Common</label>
             </value>
             <value>
+                <fullName>Framework</fullName>
+                <default>false</default>
+                <label>Framework</label>
+            </value>
+            <value>
                 <fullName>None</fullName>
                 <default>true</default>
                 <label>None</label>
+            </value>
+            <value>
+                <fullName>Test</fullName>
+                <default>false</default>
+                <label>Test</label>
             </value>
         </valueSetDefinition>
     </valueSet>

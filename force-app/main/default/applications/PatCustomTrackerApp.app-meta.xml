@@ -28,6 +28,15 @@
         <pageOrSobjectType>RuleResult__c</pageOrSobjectType>
     </actionOverrides>
     <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>RuleSetHistory_RecordPage</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>RuleSetHistory__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <content>PatCustomTracker_HomePage</content>
         <formFactor>Large</formFactor>
@@ -51,6 +60,7 @@
     <tabs>RuleResult__c</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
+    <tabs>RuleSetHistory__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>PatCustomTracker_UtilityBar</utilityBar>
     <workspaceConfig>
@@ -59,6 +69,9 @@
         </mappings>
         <mappings>
             <tab>RuleResult__c</tab>
+        </mappings>
+        <mappings>
+            <tab>RuleSetHistory__c</tab>
         </mappings>
         <mappings>
             <fieldName>MetadataFile__c</fieldName>
