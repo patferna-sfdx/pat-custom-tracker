@@ -15,6 +15,18 @@
    <include-pattern>.*/lwc/.*</include-pattern>
    <include-pattern>.*/objects/.*</include-pattern>
    <include-pattern>.*/workflows/.*</include-pattern>
+   <include-pattern>.*/approvalProcesses/.*</include-pattern>
+   <include-pattern>.*/pages/.*</include-pattern>
+
+   <rule name="LowCode Flow" language="xml" message="ApprovalProcess metadata" class="net.sourceforge.pmd.lang.rule.XPathRule">
+    <priority>5</priority>
+    <properties>
+      <property name="version" value="2.0"/>
+      <property name="xpath"><value><![CDATA[
+        //ApprovalProcess[count(//ApprovalProcess) = 1]
+      ]]></value></property>
+    </properties>
+  </rule>
 
   <rule name="ProCode Aura" language="xml" message="Aura Component metadata" class="net.sourceforge.pmd.lang.rule.XPathRule">
     <priority>1</priority>
@@ -92,6 +104,16 @@
       <property name="version" value="2.0"/>
       <property name="xpath"><value><![CDATA[
         //Workflow[count(//Workflow) = 1]
+      ]]></value></property>
+    </properties>
+  </rule>
+
+  <rule name="LowCode Workflow" language="xml" message="Visualforce metadata" class="net.sourceforge.pmd.lang.rule.XPathRule">
+    <priority>1</priority>
+    <properties>
+      <property name="version" value="2.0"/>
+      <property name="xpath"><value><![CDATA[
+        //ApexPage[count(//ApexPage) = 1]
       ]]></value></property>
     </properties>
   </rule>
