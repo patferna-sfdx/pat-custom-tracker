@@ -4,9 +4,6 @@
         <field>CUST_ID</field>
     </columns>
     <columns>
-        <field>CUST_CURRENCY_ISO_CODE</field>
-    </columns>
-    <columns>
         <field>CUST_OWNER_NAME</field>
     </columns>
     <columns>
