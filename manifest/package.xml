@@ -8,6 +8,7 @@
 		<members>PatCustomTracker</members>
 		<members>PatCustomTracker/ComplianceScore</members>
 		<members>PatCustomTracker/PriorityScore</members>
+		<members>PatCustomTracker/RuleSetHistory</members>
 		<members>PatCustomTracker/StandardScore</members>
 		<name>Dashboard</name>
 	</types>
