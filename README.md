@@ -126,4 +126,5 @@ sh run-2-transform.sh
 sh run-3-dataload.sh
 ```
  - Go to **PAT Custom Tracker** application on the sandbox
- - Use the existing report and dashboard or feel free to create new ones
+ - Set the value of the Domain field of the metadata file records if necessary
+ - Use the existing report and dashboard or feel free to create new ones (It is better to create new Reports and Dashboards in order to facilitate possible updates of the tool in the future.)
