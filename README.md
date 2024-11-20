@@ -70,9 +70,9 @@ Flow and Apex XPathRule examples
     </properties>
   </rule>
 ```
-Nota:
-- `<priority>5</priority>` means 100% compliance with LowCode objective
-- `<priority>1</priority>` means 0% compliance with LowCode objective (or 100% ProCode)
+ > Nota:
+    - `<priority>5</priority>` means 100% compliance with LowCode objective
+    - `<priority>1</priority>` means 0% compliance with LowCode objective (or 100% ProCode)
 ### To add a new SObject to the list
 
 ### Reports and Dashboards
@@ -89,6 +89,7 @@ The following dashboards are pre-configured:
 - `Compliance Score` (Global Compliance focus, cross-RuleType: Security, Design, ProCode vs LowCode, ...)
 - `Standard Score` (Compliance Score by Domain and RuleType, **useful to focus on ProCode vs LowCode from a particular domain**)
 [![Standard Score](./docs/screenshots/standard-score.png)](./docs/screenshots/standard-score.png)
+
 - `RuleSet History Dashboard` (Compliance Score History)
 [![RuleSet History Dashboard](./docs/screenshots/ruleset-history-dashboard.png)](./docs/screenshots/ruleset-history-dashboard.png)
 
@@ -106,20 +107,20 @@ Use GitHub Salesforce Deploy Tool:
 - Deploy **PAT Custom Tracker** (this repo) to a Developer sandbox using
 - Grant yourself the Permission Set `PatCustomTrackerAdmin`
 - With VSCode retrieve from a sandbox the metadata to be analyzed via a manifest `package.xml` file or by positioning on the development branch of your Git project
-Nota: Be careful to keep the following files locally after a `git checkout`
- -- `run-1-extract.sh`
- -- `run-2-transform.sh`
- -- `run-3-dataload.sh`
- -- `custom-vs-standard-ruleset.xml`
- -- `transform/CREATE_TABLES.sql`
- -- `transform/TRANSFORM.sql`
+   > Nota: Be careful to keep the following files locally after a `git checkout`
+    - `run-1-extract.sh`
+    - `run-2-transform.sh`
+    - `run-3-dataload.sh`
+    - `custom-vs-standard-ruleset.xml`
+    - `transform/CREATE_TABLES.sql`
+    - `transform/TRANSFORM.sql`
  - Run the following Shell scripts in order
-Nota: The following files will be generated
- -- `transform/in/PmdReport.csv`
- -- `transform/in/CpdReport.csv`
- -- `transform/out/1_MetadataFile__c.csv`
- -- `transform/out/2_RuleSetResult__c.csv`
- -- `transform/out/3_RuleResult__c.csv`
+   > Nota: The following files will be generated
+    - `transform/in/PmdReport.csv`
+    - `transform/in/CpdReport.csv`
+    - `transform/out/1_MetadataFile__c.csv`
+    - `transform/out/2_RuleSetResult__c.csv`
+    - `transform/out/3_RuleResult__c.csv`
 ```sh
 sh run-1-extract.sh
 sh run-2-transform.sh
