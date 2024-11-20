@@ -103,7 +103,7 @@ Use GitHub Salesforce Deploy Tool:
 [<img alt="Deploy to Salesforce" src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png"/>](https://githubsfdeploy.herokuapp.com/?owner=patferna-sfdx&repo=pat-custom-tracker&ref=main)
 
 ## Quick Start
-- Deploy **PAT Custom Tracker** (this repo) to a Developer sandbox using
+- Deploy **PAT Custom Tracker** (this repo) to a Developer sandbox using **Salesforce CLI** or **GitHub Salesforce Deploy**
 - Grant yourself the Permission Set `PatCustomTrackerAdmin`
 - With VSCode retrieve from a sandbox the metadata to be analyzed via a manifest `package.xml` file or by positioning on the development branch of your Git project
    > Nota: Be careful to keep the following files locally after a `git checkout`
