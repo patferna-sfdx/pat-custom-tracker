@@ -73,7 +73,6 @@ Flow and Apex XPathRule examples
  > Nota:
     - `<priority>5</priority>` means 100% compliance with LowCode objective
     - `<priority>1</priority>` means 0% compliance with LowCode objective (or 100% ProCode)
-### To add a new SObject to the list
 
 ### Reports and Dashboards
 The following reports are pre-configured:
